@@ -1,4 +1,13 @@
+// Main Command - SCSS files to edi
+@import"normalize";
+@import"google-doodle-homepage";
+    
+
 /* Styling */
 body {
-    background: rgb(4, 118, 109);
+    background: rgb(11, 47, 45);
+}
+
+img {
+    border-style:dotted black;    
 }
