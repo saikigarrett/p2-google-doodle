@@ -8,6 +8,40 @@ body {
     background: rgb(11, 47, 45);
 }
 
-img {
-    border-style:dotted black;    
+// THis is our div ID stage
+
+#stage {
+    position: relative;
+    overflow: hidden;
 }
+
+
+//child
+#stage svg {
+    position: absolute;
+    width: 50%;
+    bottom: 0;
+    right: 0;
+}
+
+//child
+
+#stage h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+//Animations Go Here
+#stage h1,
+#stage svg {
+    opacity: 0;
+}
+
+// Last Frame
+#stage:hover h1,
+#stage:hover svg, {
+    opacity: 1;
+    transition: opacity 2.5s;
+}
+
